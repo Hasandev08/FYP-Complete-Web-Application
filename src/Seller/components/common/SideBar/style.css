@@ -1,0 +1,30 @@
+.sidebar {
+  background-color: #f0f6f9;
+  height: 200%;
+}
+.sidebar-heading {
+  color: #b6bbc3;
+  font-size: 16px;
+  margin: 20px 0px 0px 20px;
+}
+.sidebar-heading p {
+  margin-bottom: 10px;
+}
+.sidebar-buttons {
+  background-color: black !important;
+}
+.title {
+  color: #a9aeb6;
+}
+.navbar {
+  background-color: #f0f6f9;
+  width: 100% !important;
+}
+.screens {
+  background-color: #fdfdfd;
+}
+@media screen and (min-width: 600px) {
+  .navbar {
+    display: none !important;
+  }
+}

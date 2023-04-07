@@ -1,0 +1,126 @@
+@media screen and (min-width: px) {
+    .main-browse-div{
+        z-index: 0;
+        overflow: hidden;
+        height: 150vh;
+    }        
+}
+
+@media screen and (min-width: 0px) {
+    .main-browse-div::before{
+        overflow-y: hidden !important;
+        height: 210vh;
+        border-radius: 50%;
+        position: absolute;
+        background-color: #314E52;
+        right: -700px;
+        left: -700px;
+        top: -200px;
+        content: '';
+        bottom: 0;    
+    }    
+}
+
+@media screen and (min-width: 770px) {
+    .main-browse-div::before{
+        overflow-y: hidden !important;
+        height: 160vh;
+        border-radius: 50%;
+        position: absolute;
+        background-color: #314E52;
+        right: -700px;
+        left: -700px;
+        top: -200px;
+        content: '';
+        bottom: 0;    
+    }    
+}
+
+.sub-container{
+    background-color: rgb(255, 255, 255, 0.4);
+}
+
+@media screen and (min-width: 0px) {
+    .sub-container{
+        height: 120vh;
+    }
+}
+
+@media screen and (min-width: 770px) {
+    .sub-container{
+        height: 70vh;
+    }
+}
+
+.summer{
+    color: rgb(75, 73, 73);
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.resolution{
+    color: rgb(75, 73, 73);
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+@media screen and (min-width: 0px) {
+    .businessman{
+        height: 100%;
+        width: 80%;
+        padding-bottom: 3rem;
+    }    
+}
+
+@media screen and (min-width: 768px) {
+    .businessman{
+        height: 100%;
+        width: 100%;
+        padding-bottom: 0;
+    }    
+}
+
+.filter-button{
+    padding: 0.15rem 0.7rem 0.15rem 0.7rem !important;
+}
+
+.posts-grid{
+    margin-top: 2rem;
+}
+
+.offcanvas.offcanvas-start{
+    background-color: rgb(49, 78, 82, 0.92);
+}
+
+.sub-category:hover{
+    color: #f2a154;
+    cursor: pointer;
+}
+
+.form-check-input:checked[type=radio] {
+    background-image: none !important;
+}
+
+.form-check-input:checked {
+    border-color: #f2a154 !important;
+}
+/* width */
+::-webkit-scrollbar {
+    width: 7px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(167, 165, 165);
+    border-radius: 50px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(138, 136, 136);
+  }
