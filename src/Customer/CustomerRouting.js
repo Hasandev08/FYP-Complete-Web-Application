@@ -12,7 +12,7 @@ import PostDetail from './components/PostDetail/PostDetail'
 import Checkout from './components/Checkout/Checkout'
 import Contact from './components/Contact/Contact'
 
-function CustomerSelling(props) {
+function CustomerRouting(props) {
   return (
     <BrowserRouter>
       {/* const location = useLocation(); */}
@@ -37,4 +37,4 @@ function CustomerSelling(props) {
   )
 }
 
-export default CustomerSelling
+export default CustomerRouting

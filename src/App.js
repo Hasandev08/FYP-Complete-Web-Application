@@ -1,6 +1,6 @@
 import React from 'react'
 
-import CustomerSelling from './Customer/CustomerRouting'
+import CustomerRouting from './Customer/CustomerRouting'
 import SellerRouting from './Seller/SellerRouting'
 
 function App() {
