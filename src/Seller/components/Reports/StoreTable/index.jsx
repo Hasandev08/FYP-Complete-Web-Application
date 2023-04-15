@@ -5,6 +5,8 @@ import EditButton from '../../StoreButtons/EditButton'
 
 import { useNavigate } from 'react-router-dom'
 
+import './style.css'
+
 function StoreTable({ listData, tableHeader }) {
   const navigate = useNavigate()
 

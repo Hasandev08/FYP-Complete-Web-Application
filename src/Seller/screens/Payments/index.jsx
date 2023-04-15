@@ -1,12 +1,12 @@
 import React from 'react'
 
-import ReportTables from '../../components/common/ReportTables'
+import PaymentTable from '../../components/Reports/PaymentTable'
+import SearchBar from '../../components/common/SearchBar'
 import Sidebar from '../../components/common/SideBar'
 
 import { paymentHeader, paymentList } from '../../config/paymentData'
 
 import './style.css'
-import SearchBar from '../../components/common/SearchBar'
 
 function Payments() {
   return (
@@ -19,7 +19,7 @@ function Payments() {
           <SearchBar />
         </div>
         <div className='payments-report'>
-          <ReportTables listData={paymentList} tableHeader={paymentHeader} check paymentCheck />
+          <PaymentTable listData={paymentList} tableHeader={paymentHeader} check paymentCheck />
         </div>
       </div>
     </div>
