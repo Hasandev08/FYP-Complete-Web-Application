@@ -29,7 +29,7 @@ function stableSort(array, comparator) {
   return stabilizedThis.map((el) => el[0])
 }
 
-function Table({ headCells, filterTableData }) {
+function OrderTable({ headCells, filterTableData }) {
   return (
     <EnhancedTable
       filterTableData={filterTableData}
@@ -40,4 +40,4 @@ function Table({ headCells, filterTableData }) {
   )
 }
 
-export default Table
+export default OrderTable

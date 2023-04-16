@@ -1,9 +1,9 @@
 import Account from './screens/Account'
 import AddProduct from './screens/AddProduct'
+import Approvals from './screens/Approvals'
 import DashBoard from './screens/DashBoard'
 import EditProduct from './screens/EditProduct'
 import Orders from './screens/Orders'
-import Payments from './screens/Payments'
 import Store from './screens/Store'
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
@@ -13,13 +13,13 @@ function SellerRouting() {
     <div className='App'>
       <BrowserRouter>
         <Routes>
-          <Route path='/account' exact element={<Account />}></Route>
-          <Route path='/payment' exact element={<Payments />}></Route>
-          <Route path='/orders' exact element={<Orders />} />
-          <Route path='/store/edit' exact element={<EditProduct />} />
+          <Route path='/account' exact element={<Account />} />
           <Route path='/store/add' exact element={<AddProduct />} />
-          <Route path='/store' exact element={<Store />} />
+          <Route path='/approvals' exact element={<Approvals />} />
           <Route path='/' exact element={<DashBoard />} />
+          <Route path='/store/edit' exact element={<EditProduct />} />
+          <Route path='/orders' exact element={<Orders />} />
+          <Route path='/store' exact element={<Store />} />
         </Routes>
       </BrowserRouter>
     </div>

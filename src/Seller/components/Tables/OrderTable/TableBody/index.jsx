@@ -1,7 +1,7 @@
 import * as React from 'react'
 
 import EnhancedTableHead from '../TableHead/index'
-import Pagination from '../../Pagination'
+import Pagination from '../../../Pagination'
 
 import Table from '@mui/material/Table'
 import TableBody from '@mui/material/TableBody'

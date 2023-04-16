@@ -1,12 +1,12 @@
 import React from 'react'
 
-import DashBoardTable from './DashBoardTable'
+import DashBoardTable from '../Tables/DashBoardTable'
 
 import { productsTableHeader, revenueTableHeader } from '../../config/dashboardData'
 
 import './style.css'
 
-function Reports({ topCountries, topProducts, weekData }) {
+function DashBoardContent({ topCountries, topProducts, weekData }) {
   return (
     <div className='reports container-fluid'>
       <div className='row'>
@@ -36,4 +36,4 @@ function Reports({ topCountries, topProducts, weekData }) {
   )
 }
 
-export default Reports
+export default DashBoardContent
