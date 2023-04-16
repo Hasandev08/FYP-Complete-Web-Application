@@ -6,7 +6,7 @@ import SellerRouting from './Seller/SellerRouting'
 function App() {
   return (
     <div className='App'>
-      <CustomerRouting />
+      <SellerRouting />
     </div>
   )
 }
