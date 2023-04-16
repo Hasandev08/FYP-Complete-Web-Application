@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 import ApprovalsTable from '../../components/Tables/ApprovalsTable'
 import SearchBar from '../../components/common/SearchBar'
@@ -9,6 +9,16 @@ import { approvalData, approvalHeader } from '../../config/approvalData'
 import './style.css'
 
 const Approvals = () => {
+  const [filterProductData, setFilterProductData] = useState(approvalData)
+
+  const handleChange = (val) => {
+    const filteredData = approvalData.filter(
+      (item) =>
+        item.product_name.toLowerCase().includes(val.toLowerCase()) ||
+        item.company_name.toLowerCase().includes(val.toLowerCase())
+    )
+    setFilterProductData(filteredData)
+  }
   return (
     <div className='screen d-flex'>
       <div className='common-sidebar'>
@@ -16,10 +26,10 @@ const Approvals = () => {
       </div>
       <div className='approvals d-flex flex-column w-100'>
         <div className='approvals-search w-100 my-4'>
-          <SearchBar />
+          <SearchBar handleChange={handleChange} />
         </div>
         <div className='approvals-table'>
-          <ApprovalsTable listData={approvalData} tableHeader={approvalHeader} />
+          <ApprovalsTable listData={filterProductData} tableHeader={approvalHeader} />
         </div>
       </div>
     </div>
