@@ -21,7 +21,10 @@ function ApprovalsTable({ listData, tableHeader }) {
           </thead>
           <tbody>
             {listData.map((item, index) => (
-              <tr onClick={() => navigate(`/approvals/${item.id}`)} key={index.toString()}>
+              <tr
+                key={index.toString()}
+                onClick={() => navigate(`/approvals/${item.id}`, { state: item })}
+              >
                 <th scope='row'>{item.id}</th>
                 <td>{item.customer_name}</td>
                 <td>{item.product_name}</td>

@@ -1,0 +1,33 @@
+.customer-side {
+  width: 100%;
+}
+.customer-background {
+  border-radius: 25px;
+  box-shadow: 1px 1px 1px 1px rgb(0, 0, 0, 0.5);
+  height: 30rem;
+  margin-top: 1rem;
+  padding: 0px 0px 2rem !important;
+  width: 40% !important;
+}
+.customer-img {
+  background-color: grey;
+  border-radius: 10rem;
+  height: 6rem;
+  width: 6rem;
+}
+.customer-details {
+  width: 95%;
+}
+.customer-details p {
+  font-size: 12px;
+}
+.details-heading {
+  width: 25%;
+}
+.details {
+  margin-left: 1rem;
+  width: 75%;
+}
+
+@media screen and (max-width: 768px) {
+}
