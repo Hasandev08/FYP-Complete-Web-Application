@@ -5,18 +5,19 @@
   border-radius: 25px;
   box-shadow: 1px 1px 1px 1px rgb(0, 0, 0, 0.5);
   height: 30rem;
-  margin-top: 1rem;
-  padding: 0px 0px 2rem !important;
+  margin-top: 2rem;
+  padding: 1rem 0px !important;
   width: 40% !important;
 }
 .customer-img {
   background-color: grey;
   border-radius: 10rem;
   height: 6rem;
+  margin-bottom: 1rem;
   width: 6rem;
 }
 .customer-details {
-  width: 95%;
+  width: 92%;
 }
 .customer-details p {
   font-size: 12px;
@@ -28,6 +29,13 @@
   margin-left: 1rem;
   width: 75%;
 }
-
+@media screen and (max-width: 425px) {
+  .details-heading {
+    display: none;
+  }
+}
 @media screen and (max-width: 768px) {
+  .customer-background {
+    width: 80% !important;
+  }
 }

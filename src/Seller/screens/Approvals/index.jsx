@@ -7,9 +7,12 @@ import Sidebar from '../../components/common/SideBar'
 import { approvalData, approvalHeader } from '../../config/approvalData'
 
 import './style.css'
+import { useLocation } from 'react-router-dom'
 
 const Approvals = () => {
   const [filterProductData, setFilterProductData] = useState(approvalData)
+  const location = useLocation()
+  console.log('approvals', location.state)
 
   const handleChange = (val) => {
     const filteredData = approvalData.filter(

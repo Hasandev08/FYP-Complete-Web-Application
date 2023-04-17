@@ -1,13 +1,26 @@
-import React from 'react'
+import React, { useState } from 'react'
 
+import CrossButton from '../../components/CrossButton'
 import Sidebar from '../../components/common/SideBar'
-import { useLocation } from 'react-router-dom'
+import TickButton from '../../components/TickButton'
+
+import { useLocation, useNavigate } from 'react-router-dom'
 
 import './style.css'
 
 const Customer = () => {
+  const [approved, setApproved] = useState('Pending')
+
+  const navigate = useNavigate()
   const location = useLocation()
   const customer = location.state
+
+  const handleClick = (approve) => {
+    console.log('checking', approve)
+    setApproved(approve)
+    console.log('Check', approved)
+    navigate('/approvals', { state: approved })
+  }
 
   return (
     <div className='screen d-flex'>
@@ -34,10 +47,19 @@ const Customer = () => {
               <p>{customer.quantity}</p>
               <p>{customer.from}</p>
               <p>{customer.to}</p>
-              <p>{customer.r_price}</p>
+              <p>{customer.r_price}/-</p>
               <p></p>
               <p></p>
             </div>
+          </div>
+          <div className='customer-buttons d-flex justify-content-around w-100'>
+            <CrossButton
+              handleClick={() => {
+                setApproved('Rejected')
+                navigate('/approvals', { state: approved })
+              }}
+            />
+            <TickButton handleClick={() => handleClick('Approved')} />
           </div>
         </div>
       </div>
