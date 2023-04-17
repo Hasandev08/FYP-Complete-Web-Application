@@ -15,7 +15,7 @@ const Approvals = () => {
     const filteredData = approvalData.filter(
       (item) =>
         item.product_name.toLowerCase().includes(val.toLowerCase()) ||
-        item.company_name.toLowerCase().includes(val.toLowerCase())
+        item.customer_name.toLowerCase().includes(val.toLowerCase())
     )
     setFilterProductData(filteredData)
   }
@@ -28,7 +28,7 @@ const Approvals = () => {
         <div className='approvals-search w-100 my-4'>
           <SearchBar handleChange={handleChange} />
         </div>
-        <div className='approvals-table'>
+        <div className='approvals-table container-fluid'>
           <ApprovalsTable listData={filterProductData} tableHeader={approvalHeader} />
         </div>
       </div>

@@ -1,8 +1,11 @@
 import React from 'react'
 
+import { useNavigate } from 'react-router-dom'
 import './style.css'
 
 function ApprovalsTable({ listData, tableHeader }) {
+  const navigate = useNavigate()
+
   return (
     <>
       <div className='data'>
@@ -18,7 +21,7 @@ function ApprovalsTable({ listData, tableHeader }) {
           </thead>
           <tbody>
             {listData.map((item, index) => (
-              <tr key={index.toString()}>
+              <tr onClick={() => navigate(`/approvals/${item.id}`)} key={index.toString()}>
                 <th scope='row'>{item.id}</th>
                 <td>{item.customer_name}</td>
                 <td>{item.product_name}</td>

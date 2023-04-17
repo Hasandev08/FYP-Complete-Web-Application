@@ -1,6 +1,7 @@
 import Account from './screens/Account'
 import AddProduct from './screens/AddProduct'
 import Approvals from './screens/Approvals'
+import Customer from './screens/Customer'
 import DashBoard from './screens/DashBoard'
 import EditProduct from './screens/EditProduct'
 import Orders from './screens/Orders'
@@ -16,6 +17,7 @@ function SellerRouting() {
           <Route path='/account' exact element={<Account />} />
           <Route path='/store/add' exact element={<AddProduct />} />
           <Route path='/approvals' exact element={<Approvals />} />
+          <Route path='/approvals/:id' exact element={<Customer />} />
           <Route path='/' exact element={<DashBoard />} />
           <Route path='/store/edit' exact element={<EditProduct />} />
           <Route path='/orders' exact element={<Orders />} />
