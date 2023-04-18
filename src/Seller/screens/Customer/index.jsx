@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 
 import CrossButton from '../../components/CrossButton'
 import Sidebar from '../../components/common/SideBar'
@@ -9,18 +9,9 @@ import { useLocation, useNavigate } from 'react-router-dom'
 import './style.css'
 
 const Customer = () => {
-  const [approved, setApproved] = useState('Pending')
-
   const navigate = useNavigate()
   const location = useLocation()
   const customer = location.state
-
-  const handleClick = (approve) => {
-    console.log('checking', approve)
-    setApproved(approve)
-    console.log('Check', approved)
-    navigate('/approvals', { state: approved })
-  }
 
   return (
     <div className='screen d-flex'>
@@ -53,13 +44,8 @@ const Customer = () => {
             </div>
           </div>
           <div className='customer-buttons d-flex justify-content-around w-100'>
-            <CrossButton
-              handleClick={() => {
-                setApproved('Rejected')
-                navigate('/approvals', { state: approved })
-              }}
-            />
-            <TickButton handleClick={() => handleClick('Approved')} />
+            <CrossButton handleClick={() => navigate('/approvals')} />
+            <TickButton handleClick={() => navigate('/approvals')} />
           </div>
         </div>
       </div>

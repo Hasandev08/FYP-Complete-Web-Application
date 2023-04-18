@@ -33,6 +33,7 @@ function ApprovalsTable({ listData, tableHeader }) {
                 <td>$ {item.r_price}</td>
                 <td>{item.from}</td>
                 <td>{item.to}</td>
+                <td></td>
               </tr>
             ))}
           </tbody>

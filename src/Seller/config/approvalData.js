@@ -68,4 +68,7 @@ export const approvalHeader = [
   {
     title: 'To',
   },
+  {
+    title: 'Status',
+  },
 ]

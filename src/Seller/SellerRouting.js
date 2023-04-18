@@ -5,6 +5,7 @@ import Customer from './screens/Customer'
 import DashBoard from './screens/DashBoard'
 import EditProduct from './screens/EditProduct'
 import Orders from './screens/Orders'
+import Return from './screens/Return'
 import Store from './screens/Store'
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
@@ -21,6 +22,7 @@ function SellerRouting() {
           <Route path='/' exact element={<DashBoard />} />
           <Route path='/store/edit' exact element={<EditProduct />} />
           <Route path='/orders' exact element={<Orders />} />
+          <Route path='/return' exact element={<Return />} />
           <Route path='/store' exact element={<Store />} />
         </Routes>
       </BrowserRouter>
