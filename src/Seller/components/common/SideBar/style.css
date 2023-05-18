@@ -16,7 +16,7 @@
 .title {
   color: #a9aeb6;
 }
-.navbar {
+._navbar {
   background-color: #f0f6f9;
   width: 100% !important;
 }
@@ -24,7 +24,7 @@
   background-color: #fdfdfd;
 }
 @media screen and (min-width: 600px) {
-  .navbar {
+  ._navbar {
     display: none !important;
   }
 }

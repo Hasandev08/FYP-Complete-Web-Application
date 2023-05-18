@@ -64,7 +64,7 @@ function Sidebar({ window }) {
   return (
     <Box sx={{ display: 'flex' }}>
       <CssBaseline />
-      <div className='navbar'>
+      <div className='navbar _navbar'>
         <IconButton
           color='black'
           aria-label='open drawer'
